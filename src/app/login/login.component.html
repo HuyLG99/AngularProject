@@ -4,9 +4,9 @@
         <div class="col-md-6">
             <form class="form-group" (ngSubmit)="login()">
                 <div class="text-center">
-                    <h1 style="color: white;">Welcome Back!</h1>
+                    <h1 style="color: black;">Welcome Back!</h1>
                 </div>
-            <h3 style="color: white;">Firebase and Google Login</h3>
+            <!-- <h3 style="color: black;">Firebase and Google Login</h3> -->
             <div class="form-group p-2">
             <input type="email" name="email" class="form-control" [(ngModel)]="email" placeholder="Enter email" required>
         </div>
@@ -14,7 +14,7 @@
             <input type="password" name="password" class="form-control" [(ngModel)]="password" placeholder="Enter Password" required>
         </div>
         <div class="form-group p-2">
-            <button type="submit" class="btn btn-primary btn-block" (click)="this.login()">Login with FireBase</button>
+            <button type="submit" class="btn btn-primary btn-block"  (click)="this.login()">Login with FireBase</button>
             <hr>
             <button type="button" class="btn btn-primary btn-block" [routerLink]="['/register']">Register with FireBase</button>
             <hr>
